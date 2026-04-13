@@ -1,5 +1,6 @@
-$passwd = "admin"
+
 do{
-    $userPasswd = "Introduce una contraseña: "
-}
-until ($userPasswd -eq $passwd)
+    $userPasswd = Read-Host "Introduce una contraseña: "
+}while ($userPasswd -ne 'admin')
+
+
